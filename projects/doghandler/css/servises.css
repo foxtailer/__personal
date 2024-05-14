@@ -1,0 +1,216 @@
+.services-pag__item {
+  background-color: #514d4a;
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.page__top-decor {
+  display: none;
+}
+
+.services-pag__inner {
+  padding: 20px 10px;
+}
+
+.item-content__title {
+  padding: 20px 0;
+}
+
+.tags {
+  padding-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.services-pag__item__item {
+  background-color: #f6f5f2;
+  color: #000;
+}
+
+.services-pag__item__item + .services-pag__item__item {
+  margin-top: 30px;
+}
+
+.item-content {
+  padding: 10px;
+  border-top: none;
+}
+
+.item-previev img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+/* Registration */
+
+.registration {
+  background-color: #f6f5f2;
+  padding: 10px 10px;
+}
+
+.registration__to {
+  padding: 30px 0 20px;
+}
+
+.registration__form {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.registration__to-heder {
+  text-transform: uppercase;
+}
+
+.appointment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
+.appointment-item input,
+.registration__submit-btn,
+.registration__to-select {
+  box-sizing: border-box;
+  width: 140px;
+  height: 40px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-bottom: 7px;
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-item textarea {
+  height: 150px;
+}
+
+.registration__submit-btn {
+  margin-top: 10px;
+  background-color: #c2c2c2;
+}
+
+.input__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+
+@media(min-width:450px) {
+  .appointment-item input {
+    width: 100%;
+  }
+}
+
+@media(min-width:768px) {
+
+  .page__top-decor {
+    display: block;
+  }
+  
+  .services-pag__item {
+    padding-bottom: 70px;
+  }
+  .header__inner--servises {
+    flex-direction: column;
+    background-image: url(../img/bg-servises.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+  .header__logo--servises {
+    display: flex;
+    order: 1;
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+  }
+  .services__title {
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+  }
+  .services-pag__item__item {
+    display: flex;
+    margin-top: 0;
+  }
+  .item-content {
+    border-left: none;
+  }
+  .item-previev img {
+    min-width: 200px;
+    height: 100%;
+  }
+  .disclaimer {
+    padding-top: 10px;
+    font-weight: 700;
+  }
+  /* Registration */
+  .registration {
+    position: relative;
+  }
+  .registration__top-decor {
+    position: absolute;
+    top: -60px;
+    left: 0;
+  }
+  .input__fields {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .appointment-item:nth-child(5) {
+    grid-column: 4/-1;
+    grid-row: 2/-1;
+  }
+  .appointment-item:nth-child(4) {
+    grid-column: 1/4;
+    grid-row: 2/-1;
+  }
+  .appointment-item:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .appointment-item:nth-child(2) {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
+  .appointment-item:nth-child(3) {
+    grid-column: 5/7;
+    grid-row: 1/2;
+  }
+}
+
+@media(min-width:1200px) {
+
+  .services-pag__item__item + .services-pag__item__item {
+    flex-direction: column;
+  }
+  .services-pag__item__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 1fr;
+    gap: 20px;
+  }
+  .services-pag__item__item:first-child {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .item-previev img {
+    height: 450px;
+  }
+  .services-pag__item__item + .services-pag__item__item .item-content{
+    border-top: none;
+  }
+}

@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  background-color: #EBEBEB;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  outline: 0;
+  outline-offset: 0;
+}
+
+/* ------- */
+
+/* Header */
+
+.header {
+  padding: 50px 0;
+}
+
+.main-title {
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+
+.main-title span {
+  font-size: 1.2rem;
+}
+
+dl {
+  margin-top: 10px;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px; 
+}
+
+dt {
+  font-weight: 700;
+}
+
+/* Project */
+
+.project {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.previev-img {
+  max-width: 400px;
+  min-width: 200px;
+  max-height: 400px;
+  flex-grow: 1;
+}
+.previev-img img {
+  width: 100%;
+  height: auto;
+}
+
+.project-link {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  align-self: flex-end;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Footer */
+
+footer p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+
+@media(max-width:360px) {
+  html {
+    font-size: 80%;
+  }
+}
