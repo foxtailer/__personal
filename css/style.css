@@ -107,6 +107,7 @@ dt {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  border-bottom: 1px solid #9a9a9a;
 }
 
 .previev-img {
@@ -131,6 +132,11 @@ dt {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main-inner {
+  width: fit-content;
 }
 
 /* Footer */
