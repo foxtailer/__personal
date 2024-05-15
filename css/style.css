@@ -107,6 +107,9 @@ dt {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.project:not(:last-child) {
   border-bottom: 1px solid #9a9a9a;
 }
 
