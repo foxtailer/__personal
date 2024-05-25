@@ -116,12 +116,11 @@ dt {
 .previev-img {
   max-width: 400px;
   min-width: 200px;
-  max-height: 400px;
-  flex-grow: 1;
 }
 .previev-img img {
   width: 100%;
   height: auto;
+  vertical-align: top;
 }
 
 .project-link {
@@ -129,6 +128,10 @@ dt {
   margin-right: 15px;
   margin-top: 15px;
   align-self: flex-end;
+}
+
+.project-link__arrow {
+  color: blue;
 }
 
 .description {
@@ -147,6 +150,17 @@ dt {
 footer p {
   text-align: center;
   padding: 20px 0;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contacts__mail {
+  color: blue;
+  border-top: 1px solid black;
+  padding: 1rem 0;
+  display: inline-block;
 }
 
 
