@@ -1,0 +1,33 @@
+#wrapper{
+/*max-width: 500px;
+ margin: auto; */
+ margin-left: auto;
+    margin-right: auto;
+  background-color: #000000;
+}
+
+body {
+  background-color: #92a8d1;}
+
+P { text-align: center }
+#question {
+  background-color: yellow;
+  width: 17em;
+}
+
+.num_buttons {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+    height: 3em;
+    width: 5em;
+}
+
+.num_buttons:hover {
+    background: #67c5ff;
+    color: white;
+}
