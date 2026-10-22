@@ -117,20 +117,29 @@ dt {
 
 .previev-img {
   width: 400px;
-}
-
-.previev-img video {
-  width: 100%;
   height: 255px;
-  vertical-align: top;
-  object-fit: contain;
+  position: relative;
 }
 
+.previev-img video,
 .previev-img img {
   width: 100%;
-  height: 255px;
+  height: 100%;
   vertical-align: top;
   object-fit: contain;
+  border-radius: 4px;
+  
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  transform-origin: center center;
+  position: relative;
+  z-index: 1;
+}
+
+.previev-img:hover video,
+.previev-img:hover img {
+  transform: scale(1.7);
+  z-index: 100;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .project-link {
